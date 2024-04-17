@@ -1,5 +1,5 @@
 function LandingPage() {
-  return <div>LandingPage</div>;
+  return <div className="text-2xl text-primary">LandingPage</div>;
 }
 
 export default LandingPage;
