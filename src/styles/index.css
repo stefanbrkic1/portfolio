@@ -34,3 +34,7 @@
     font-size: 1vw;
   }
 }
+
+html {
+  overflow-x: hidden;
+}

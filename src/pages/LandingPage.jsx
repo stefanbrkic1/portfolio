@@ -1,6 +1,8 @@
+import { useEffect } from "react";
+
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-import { useEffect } from "react";
+import SkillsSection from "../components/SkillsSection";
 
 function LandingPage() {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -9,6 +11,7 @@ function LandingPage() {
     <>
       <Navbar />
       <HeroSection />
+      <SkillsSection />
     </>
   );
 }
