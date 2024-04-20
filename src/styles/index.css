@@ -8,14 +8,29 @@
   .container {
     margin: 0 auto;
     max-width: 2500px;
-    padding-left: 4.5%;
-    padding-right: 4.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .background-90deg {
+    background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+  }
+
+  .background-0deg {
+    background: linear-gradient(0deg, #ccf381 55%, #4831d4 45%);
   }
 }
 
 :root {
+  font-family: "Inter", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 640px) and (max-width: 1600px) {
+  html {
+    font-size: 1vw;
+  }
 }
