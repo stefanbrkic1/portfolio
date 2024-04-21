@@ -17,13 +17,13 @@ function LandingPage() {
             </h2>
           </FadeInItem>
           <div className="flex flex-col gap-7 pt-7 text-[1.1rem] sm:text-[1.9rem] md:text-[1.6rem] lg:text-[1.3rem] xl:text-[1.1rem]">
-            <FadeInItem index={1} showOnce={true}>
+            <FadeInItem index={3} showOnce={true}>
               <p>
                 Hi! I&apos;m Stefan👋, Frontend Developer based in Belgrade,
                 Serbia.
               </p>
             </FadeInItem>
-            <FadeInItem index={2} showOnce={true}>
+            <FadeInItem index={4} showOnce={true}>
               <p>
                 My journey into coding began while working on a software project
                 as a designer. I realized that I could devise effective
@@ -31,14 +31,14 @@ function LandingPage() {
                 know how to write the code myself.
               </p>
             </FadeInItem>
-            <FadeInItem index={3} showOnce={true}>
+            <FadeInItem index={5} showOnce={true}>
               <p>
                 This passion for problem-solving seamlessly translated into my
                 coding approach. Now I work on solving problems by crafting
                 interactive and engaging web experiences for users.
               </p>
             </FadeInItem>
-            <FadeInItem index={4} showOnce={true}>
+            <FadeInItem index={6} showOnce={true}>
               <p>
                 When I&apos;m not coding, you can find me on a football field or
                 in a gym, lifting weights and doing martial arts.
