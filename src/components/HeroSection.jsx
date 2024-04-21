@@ -11,7 +11,7 @@ function HeroSection() {
           <h1>Frontend Developer.</h1>
         </FadeInItem>
         <FadeInItem index={3} showOnce={true}>
-          <p className="text-center sm:text-start text-[15px] sm:text-[1.5rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium sm:max-w-[320px] lg:max-w-[420px] xl:max-w-[550px] mt-1">
+          <p className="text-center sm:text-start text-[15px] sm:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium sm:max-w-[40rem] mt-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             dicta accusantium amet enim.
           </p>
@@ -538,7 +538,7 @@ function HeroSection() {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M13.9327 43.0493L28.5132 43.0715L28.491 28.491L43.0715 28.5132L43.0493 13.9327L57.6299 13.9549L57.6088 0.124142L59.1084 0.126427L59.1318 15.4568L44.5513 15.4346L44.5735 30.0151L29.9929 29.9929L30.0151 44.5734L15.4346 44.5512L15.4568 59.1318L0.126439 59.1084L0.124156 57.6088L13.9549 57.6299L13.9327 43.0493Z"
-              fill="#3155D4"
+              fill="#4831d4"
             />
           </svg>
           <svg

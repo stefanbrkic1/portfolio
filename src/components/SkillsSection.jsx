@@ -1,20 +1,28 @@
+import FadeInItem from "./FadeInItem";
+
 function SkillsSection() {
   return (
-    <div className="w-screen h-screen flex flex-col justify-center px-[9%] pt-[2rem]">
+    <div className="overflow-hidden w-full h-auto py-[17%] sm:py-[0px] sm:h-[94vh] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%] sm:pt-[2rem]">
       <div className="flex">
         <div className="relative">
-          <h1 className="text-[4em] font-black text-primary">Design</h1>
-          <p className="text-primary max-w-[33rem] text-[1.1rem]">
-            As a frontend developer, I&apos;m skilled in both coding and design.
-            I create interfaces that are both visually appealing and easy to
-            use. I pay attention to the details to make sure every project looks
-            great and works well.
-          </p>
+          <FadeInItem index={1} showOnce={true}>
+            <h1 className="text-[2.5rem] sm:text-[5.2em] lg:text-[4.5em] xl:text-[4em] font-black text-primary">
+              Design
+            </h1>
+          </FadeInItem>
+          <FadeInItem index={3} showOnce={true}>
+            <p className="text-primary sm:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
+              As a frontend developer, I&apos;m skilled in both coding and
+              design. I create interfaces that are both visually appealing and
+              easy to use. I pay attention to the details to make sure every
+              project looks great and works well.
+            </p>
+          </FadeInItem>
           <svg
             viewBox="0 0 134 123"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[7rem] top-[-3rem] w-[12rem] max-w-[150px] opacity-10"
+            className="hidden sm:block absolute left-[7rem] top-[-3rem] w-[12rem] max-w-[150px] opacity-10"
           >
             <circle cx="1" cy="1" r="1" fill="#4831D4" />
             <circle cx="12" cy="1" r="1" fill="#4831D4" />
@@ -179,7 +187,7 @@ function SkillsSection() {
             viewBox="0 0 134 123"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute right-[12rem] top-[2rem] w-[9rem] max-w-[150px] opacity-40"
+            className="hidden sm:block absolute right-[12rem] top-[2rem] w-[9rem] max-w-[150px] opacity-40"
           >
             <circle cx="1" cy="1" r="1" fill="#4831D4" />
             <circle cx="12" cy="1" r="1" fill="#4831D4" />
@@ -371,7 +379,7 @@ function SkillsSection() {
             viewBox="0 0 162 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute w-[4rem] right-[24rem] top-[10rem]"
+            className="hidden sm:block absolute w-[4rem] right-[24rem] top-[10rem]"
           >
             <path
               d="M20 11C20 16.5672 15.7034 21 10.5 21C5.29663 21 1 16.5672 1 11C1 5.4328 5.29663 1 10.5 1C15.7034 1 20 5.4328 20 11Z"
@@ -395,7 +403,7 @@ function SkillsSection() {
             viewBox="0 0 84 13"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute w-[4rem] rotate-45 bottom-0 right-[5rem]"
+            className="hidden sm:block absolute w-[4rem] rotate-45 bottom-0 right-[5rem]"
           >
             <path
               fillRule="evenodd"
@@ -406,13 +414,19 @@ function SkillsSection() {
           </svg>
         </div>
         <div>
-          <h1 className="text-[4em] font-black text-primary">Engineering</h1>
-          <p className="text-primary max-w-[33rem] text-[1.1rem]">
-            I love solving problems through engineering. I&apos;m all about
-            finding smart solutions and writing efficient code. With attention
-            to detail and a focus on making things work smoothly, I ensure every
-            project meets its goals.
-          </p>
+          <FadeInItem index={2} showOnce={true}>
+            <h1 className="text-[2.5rem]  sm:text-[5.2em] lg:text-[4.5em] xl:text-[4em] font-black text-primary">
+              Engineering
+            </h1>
+          </FadeInItem>
+          <FadeInItem index={4} showOnce={true}>
+            <p className="text-primary sm:max-w-[43rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
+              I love solving problems through engineering. I&apos;m all about
+              finding smart solutions and writing efficient code. With attention
+              to detail and a focus on making things work smoothly, I ensure
+              every project meets its goals.
+            </p>
+          </FadeInItem>
         </div>
       </div>
     </div>
