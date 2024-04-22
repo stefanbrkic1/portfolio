@@ -19,6 +19,43 @@
   .background-0deg {
     background: linear-gradient(0deg, #ccf381 55%, #4831d4 45%);
   }
+
+  .btn-animation {
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .btn-animation::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .btn-animation::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #4831d4;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .btn-animation:hover::before {
+    width: 100%;
+  }
+
+  .btn-animation:hover .svg-path {
+    fill: #ffffff;
+  }
 }
 
 :root {
@@ -27,6 +64,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
 }
 
 @media (min-width: 640px) and (max-width: 1600px) {
