@@ -6,6 +6,7 @@ export default {
       primary: "#4831D4",
       secondary: "#CCF381",
       background: "#F9F9F9",
+      accent: "#3D155F",
       transparent: "transparent",
     },
     fontFamily: {

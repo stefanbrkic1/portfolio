@@ -2,7 +2,7 @@ import FadeInItem from "./FadeInItem";
 
 function SkillsSection() {
   return (
-    <div className="overflow-hidden w-full h-auto py-[17%] sm:py-[0px] sm:h-[94vh] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%] sm:pt-[2rem]">
+    <div className="section overflow-hidden w-full h-auto py-[17%] sm:py-[0px] sm:h-[94vh] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%] sm:pt-[2rem]">
       <div className="flex">
         <div className="relative">
           <FadeInItem index={2} showOnce={true}>
@@ -11,7 +11,7 @@ function SkillsSection() {
             </h1>
           </FadeInItem>
           <FadeInItem index={3} showOnce={true}>
-            <p className="text-primary sm:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
+            <p className="text-accent sm:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
               As a frontend developer, I&apos;m skilled in both coding and
               design. I create interfaces that are both visually appealing and
               easy to use. I pay attention to the details to make sure every
@@ -420,7 +420,7 @@ function SkillsSection() {
             </h1>
           </FadeInItem>
           <FadeInItem index={5} showOnce={true}>
-            <p className="text-primary sm:max-w-[43rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
+            <p className="text-accent sm:max-w-[43rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
               I love solving problems through engineering. I&apos;m all about
               finding smart solutions and writing efficient code. With attention
               to detail and a focus on making things work smoothly, I ensure

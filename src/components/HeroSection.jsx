@@ -2,7 +2,7 @@ import FadeInItem from "./FadeInItem";
 
 function HeroSection() {
   return (
-    <div>
+    <div className="section">
       <div className="relative flex flex-col items-center sm:block sm:pb-[3.6em] h-[880px] sm:h-auto sm:max-h-[100vh] pl-[3%] pr-[3%] sm:pl-[9%] sm:pr-[0px] background-0deg sm:background-90deg pt-[24%] sm:pt-[16rem] max-[360px]:text-[33px] min-[400px]:text-[36px] text-[34px] sm:text-[4em] font-black text-[white]">
         <FadeInItem index={1} showOnce={true}>
           <h1 className="text-secondary leading-10">Hi I&apos;m Stefan</h1>
