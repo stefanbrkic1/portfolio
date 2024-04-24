@@ -2,15 +2,15 @@ import FadeInItem from "./FadeInItem";
 
 function SkillsSection() {
   return (
-    <div className="section overflow-hidden w-full h-auto py-[17%] sm:py-[0px] sm:h-[94vh] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%] sm:pt-[2rem]">
+    <div className="w-full h-auto py-[17%] sm:py-[0px] sm:h-[100vh] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%]">
       <div className="flex">
         <div className="relative">
-          <FadeInItem index={2} showOnce={true}>
+          <FadeInItem index={1} showOnce={true}>
             <h1 className="text-[2.5rem] sm:text-[5.2em] lg:text-[4.5em] xl:text-[4em] font-black text-primary">
               Design
             </h1>
           </FadeInItem>
-          <FadeInItem index={3} showOnce={true}>
+          <FadeInItem index={2} showOnce={true}>
             <p className="text-accent sm:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
               As a frontend developer, I&apos;m skilled in both coding and
               design. I create interfaces that are both visually appealing and
@@ -414,12 +414,12 @@ function SkillsSection() {
           </svg>
         </div>
         <div>
-          <FadeInItem index={4} showOnce={true}>
+          <FadeInItem index={3} showOnce={true}>
             <h1 className="text-[2.5rem]  sm:text-[5.2em] lg:text-[4.5em] xl:text-[4em] font-black text-primary">
               Engineering
             </h1>
           </FadeInItem>
-          <FadeInItem index={5} showOnce={true}>
+          <FadeInItem index={4} showOnce={true}>
             <p className="text-accent sm:max-w-[43rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
               I love solving problems through engineering. I&apos;m all about
               finding smart solutions and writing efficient code. With attention
