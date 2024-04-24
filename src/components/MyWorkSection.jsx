@@ -2,7 +2,7 @@ import FadeInItem from "./FadeInItem";
 
 function MyWorkSection() {
   return (
-    <div className="h-auto sm:h-screen sm:min-h-[50rem] px-[3%] sm:px-[9%] py-[2rem] sm:py-[0px] sm:pt-[5rem] flex items-center justify-center">
+    <div className="h-auto lg:h-screen sm:min-h-[50rem] px-[3%] sm:px-[9%] py-[2rem] sm:py-[0px] sm:pt-[5rem] flex items-center justify-center">
       <div className="flex flex-col sm:flex-row w-full sm:h-[40rem] shadow-sm">
         <div className="flex-1 bg-[#ffffff] border-b-2 sm:border-b-0 sm:border-r-2 border-primary border-opacity-40 p-[24px] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>

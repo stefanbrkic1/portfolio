@@ -2,15 +2,15 @@ import FadeInItem from "./FadeInItem";
 
 function ContactSection() {
   return (
-    <div className="h-screen px-[9%] flex justify-center items-center">
+    <div className="h-screen sm:h-auto sm:py-[8rem] lg:py-0 lg:h-screen px-[9%] flex justify-center items-center">
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col sm:justify-center sm:items-center">
-          <FadeInItem index={3} showOnce={true}>
+          <FadeInItem index={1} showOnce={true}>
             <h2 className="text-[2.3rem] sm:text-[3.5em] font-black text-primary leading-[2.7rem]">
               Send me a message!
             </h2>
           </FadeInItem>
-          <FadeInItem index={4} showOnce={true}>
+          <FadeInItem index={2} showOnce={true}>
             <p className="pt-5 text-accent text-[1.2rem] sm:text-[1.5rem] max-w-[28rem] sm:text-center">
               Got a question or proposal, or just want to say hello? Go ahead.
             </p>
