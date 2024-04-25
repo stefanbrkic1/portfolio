@@ -31,7 +31,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="absolute sm:fixed top-0 w-full z-50">
+      <div className="absolute top-0 w-full z-50">
         <nav className="px-[3%] flex justify-between items-center py-5">
           <div>
             <div className="font-black text-secondary text-[25px]">
