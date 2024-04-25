@@ -50,7 +50,14 @@ function Footer() {
         <FadeInItem index={2} showOnce={true}>
           <div className="h-[1px] bg-secondary mt-10"></div>
           <div className="text-secondary mt-9 text-[1rem] sm:text-[1.8rem] md:text-[1.6rem] lg:text-[1.3rem] xl:text-[1.1rem]">
-            Design credits: <span className="font-bold">Olaolu Olawuyi</span>
+            Design credits:{" "}
+            <a
+              href="https://github.com/whizkydee"
+              target="_blank"
+              className="font-bold"
+            >
+              Olaolu Olawuyi
+            </a>
           </div>
         </FadeInItem>
       </div>
