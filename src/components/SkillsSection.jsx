@@ -351,7 +351,7 @@ function SkillsSection() {
             viewBox="0 0 162 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute w-[4rem] left-[15rem] top-[1rem]"
+            className="hidden sm:block absolute w-[4rem] left-[15rem] top-[1rem]"
           >
             <path
               d="M20 11C20 16.5672 15.7034 21 10.5 21C5.29663 21 1 16.5672 1 11C1 5.4328 5.29663 1 10.5 1C15.7034 1 20 5.4328 20 11Z"

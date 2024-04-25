@@ -4,6 +4,7 @@ import SkillsSection from "../components/SkillsSection";
 import AboutSection from "../components/AboutSection";
 import MyWorkSection from "../components/MyWorkSection";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 import ReactFullpage from "@fullpage/react-fullpage";
 
@@ -21,6 +22,7 @@ function LandingPage() {
         <AboutSection />
         <MyWorkSection />
         <ContactSection />
+        <Footer />
       </>
     );
   }
@@ -56,6 +58,10 @@ function LandingPage() {
 
               <div className="section">
                 <ContactSection />
+              </div>
+
+              <div className="section">
+                <Footer />
               </div>
             </>
           );
