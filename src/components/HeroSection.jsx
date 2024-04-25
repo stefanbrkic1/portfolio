@@ -29,7 +29,7 @@ function HeroSection() {
               className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/github.svg')] bg-contain bg-center bg-no-repeat w-[2rem] h-[2rem]"
             ></a>
             <a
-              href="https://www.linkedin.com/in/stefan-brkic-4014012a3/"
+              href="https://twitter.com/stefanbrkic_"
               target="blank"
               className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/twitter.svg')] bg-contain bg-center bg-no-repeat w-[2rem] h-[2rem]"
             ></a>
