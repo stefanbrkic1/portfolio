@@ -11,9 +11,9 @@ function HeroSection() {
           <h1>Frontend Developer.</h1>
         </FadeInItem>
         <FadeInItem index={3} showOnce={true}>
-          <p className="text-center sm:text-start text-[15px] sm:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium sm:max-w-[40rem] mt-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            dicta accusantium amet enim.
+          <p className="text-center sm:text-start text-[1rem] sm:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium sm:max-w-[30rem] xl:max-w-[25rem] mt-1">
+            Bringing creativity and functionality to the web, one line of code
+            at a time.
           </p>
         </FadeInItem>
         <FadeInItem index={4} showOnce={true}>
