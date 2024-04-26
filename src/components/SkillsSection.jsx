@@ -1,8 +1,13 @@
 import FadeInItem from "./FadeInItem";
+import PropTypes from "prop-types";
 
-function SkillsSection() {
+function SkillsSection({ screenHeight }) {
   return (
-    <div className="w-full h-auto py-[17%] sm:py-[0px] sm:h-[100vh] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%]">
+    <div
+      className={`overflow-hidden w-full h-auto py-[17%] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%] ${
+        screenHeight < 690 ? "sm:py-[17%]" : "lg:py-0"
+      }`}
+    >
       <div className="flex">
         <div className="relative">
           <FadeInItem index={1} showOnce={true}>
@@ -432,5 +437,9 @@ function SkillsSection() {
     </div>
   );
 }
+
+SkillsSection.propTypes = {
+  screenHeight: PropTypes.number,
+};
 
 export default SkillsSection;

@@ -1,8 +1,13 @@
 import FadeInItem from "./FadeInItem";
+import PropTypes from "prop-types";
 
-function MyWorkSection() {
+function MyWorkSection({ screenHeight }) {
   return (
-    <div className="h-auto lg:h-screen sm:min-h-[50rem] px-[3%] sm:px-[9%] py-[2rem] sm:py-[0px] sm:pt-[5rem] flex items-center justify-center">
+    <div
+      className={`h-auto px-[3%] sm:px-[9%] py-[3rem] md:py-[5rem] flex items-center justify-center ${
+        screenHeight < 690 ? "lg:py-[5rem]" : "lg:py-0"
+      }`}
+    >
       <div className="flex flex-col sm:flex-row w-full sm:h-[40rem] shadow-sm">
         <div className="flex-1 bg-[#ffffff] border-b-2 sm:border-b-0 sm:border-r-2 border-primary border-opacity-40 p-[24px] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>
@@ -46,5 +51,9 @@ function MyWorkSection() {
     </div>
   );
 }
+
+MyWorkSection.propTypes = {
+  screenHeight: PropTypes.number,
+};
 
 export default MyWorkSection;

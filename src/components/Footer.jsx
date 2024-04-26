@@ -1,8 +1,13 @@
 import FadeInItem from "./FadeInItem";
+import PropTypes from "prop-types";
 
-function Footer() {
+function Footer({ screenHeight }) {
   return (
-    <footer className="lg:h-screen bg-accent p-[9%] flex items-center justify-center">
+    <footer
+      className={`bg-accent p-[9%] flex items-center justify-center ${
+        screenHeight < 690 ? "h-auto" : "lg:h-screen"
+      }`}
+    >
       <div className="w-full">
         <FadeInItem index={1} showOnce={true}>
           <div className="text-[2rem] sm:text-[3rem] font-black text-secondary">
@@ -50,7 +55,7 @@ function Footer() {
         <FadeInItem index={2} showOnce={true}>
           <div className="h-[1px] bg-secondary mt-10"></div>
           <div className="text-secondary mt-9 text-[1rem] sm:text-[1.8rem] md:text-[1.6rem] lg:text-[1.3rem] xl:text-[1.1rem]">
-            Design credits:{" "}
+            Design credits:
             <a
               href="https://github.com/whizkydee"
               target="_blank"
@@ -64,5 +69,9 @@ function Footer() {
     </footer>
   );
 }
+
+Footer.propTypes = {
+  screenHeight: PropTypes.number,
+};
 
 export default Footer;

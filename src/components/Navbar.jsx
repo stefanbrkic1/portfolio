@@ -52,33 +52,33 @@ function Navbar() {
       </div>
       {isOpen && (
         <div className="text-[#ffffff] absolute sm:fixed px-[10%] z-40 top-0 w-screen h-screen sm:top-3 sm:right-7 sm:w-auto sm:h-auto bg-primary flex flex-col gap-3 pt-[25%] sm:pt-[4.5rem] sm:p-7 text-[1.3rem] sm:text-[1.5rem] xl:text-[1rem]">
-          <FadeInItem index={1}>
+          <FadeInItem index={1} showOnce={true}>
             <div className="cursor-pointer inline hover:font-bold">My Work</div>
           </FadeInItem>
 
-          <FadeInItem index={2}>
+          <FadeInItem index={2} showOnce={true}>
             <div className="cursor-pointer inline hover:font-bold">
               About Me
             </div>
           </FadeInItem>
 
-          <FadeInItem index={3}>
+          <FadeInItem index={3} showOnce={true}>
             <div className="cursor-pointer inline hover:font-bold">Contact</div>
           </FadeInItem>
 
           <div className="pt-5 font-bold">LINKS</div>
-          <FadeInItem index={4}>
+          <FadeInItem index={4} showOnce={true}>
             <div className="cursor-pointer inline hover:font-bold">
               My Resume
             </div>
           </FadeInItem>
 
           <div className="pt-5 font-bold">SAY HELLO</div>
-          <FadeInItem index={5}>
+          <FadeInItem index={5} showOnce={true}>
             <div>stefanbrkic.inbox@gmail.com</div>
           </FadeInItem>
 
-          <FadeInItem index={6}>
+          <FadeInItem index={6} showOnce={true}>
             <div className="flex pt-5 gap-[1.1rem]">
               <a
                 href="https://www.linkedin.com/in/stefan-brkic-4014012a3/"

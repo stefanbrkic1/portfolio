@@ -9,20 +9,34 @@ import Footer from "../components/Footer";
 import ReactFullpage from "@fullpage/react-fullpage";
 
 import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
 
 function LandingPage() {
   const isSmallScreen = useMediaQuery({ maxWidth: 1024 });
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
-  if (isSmallScreen) {
+  const updateHeight = () => {
+    setScreenHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateHeight);
+
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, []);
+
+  if (isSmallScreen || screenHeight < 690) {
     return (
       <>
         <Navbar />
         <HeroSection />
-        <SkillsSection />
-        <AboutSection />
-        <MyWorkSection />
+        <SkillsSection screenHeight={screenHeight} />
+        <AboutSection screenHeight={screenHeight} />
+        <MyWorkSection screenHeight={screenHeight} />
         <ContactSection />
-        <Footer />
+        <Footer screenHeight={screenHeight} />
       </>
     );
   }
