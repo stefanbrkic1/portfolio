@@ -120,9 +120,13 @@ function Navbar({ isSmallScreen }) {
 
           <div className="pt-5 font-bold">LINKS</div>
           <FadeInItem index={4} showOnce={true}>
-            <div className="cursor-pointer inline hover:font-bold">
+            <a
+              href="/StefanBrkic-CV.pdf"
+              className="cursor-pointer inline hover:font-bold"
+              download
+            >
               My Resume
-            </div>
+            </a>
           </FadeInItem>
 
           <div className="pt-5 font-bold">SAY HELLO</div>
