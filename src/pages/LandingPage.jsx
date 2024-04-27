@@ -57,7 +57,7 @@ function LandingPage() {
             <>
               <Navbar />
 
-              <div className="section justify-start">
+              <div className="section !justify-start">
                 <HeroSection />
               </div>
 
