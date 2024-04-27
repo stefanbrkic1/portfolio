@@ -1,5 +1,6 @@
 import FadeInItem from "./FadeInItem";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function MyWorkSection({ screenHeight }) {
   return (
@@ -20,7 +21,10 @@ function MyWorkSection({ screenHeight }) {
               Open source projects, web apps and experimentals.
             </p>
           </FadeInItem>
-          <button className="btn-animation group hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem]">
+          <Link
+            to={"/projects"}
+            className="btn-animation group hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem]"
+          >
             <div>SEE MY WORK</div>
             <svg
               viewBox="0 0 100 16"
@@ -30,7 +34,7 @@ function MyWorkSection({ screenHeight }) {
             >
               <path d="M99.7071 8.70711C100.098 8.31658 100.098 7.68342 99.7071 7.29289L93.3431 0.928932C92.9526 0.538408 92.3195 0.538408 91.9289 0.928932C91.5384 1.31946 91.5384 1.95262 91.9289 2.34315L97.5858 8L91.9289 13.6569C91.5384 14.0474 91.5384 14.6805 91.9289 15.0711C92.3195 15.4616 92.9526 15.4616 93.3431 15.0711L99.7071 8.70711ZM0 9H99V7H0V9Z" />
             </svg>
-          </button>
+          </Link>
         </div>
         <div className="flex-1 bg-[#ffffff] p-[24px] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>
