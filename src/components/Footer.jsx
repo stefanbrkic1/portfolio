@@ -80,7 +80,13 @@ function Footer({ screenHeight, isSmallScreen }) {
                 >
                   stefanbrkic.inbox@gmail.com
                 </a>
-                <div className="text-secondary">t.me/stefanbrkic</div>
+                <a
+                  href="https://t.me/stefanbrkic"
+                  target="_blank"
+                  className="text-secondary"
+                >
+                  t.me/stefanbrkic
+                </a>
               </div>
             </div>
           </div>
