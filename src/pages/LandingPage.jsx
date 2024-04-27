@@ -38,7 +38,7 @@ function LandingPage() {
         <AboutSection screenHeight={screenHeight} />
         <MyWorkSection screenHeight={screenHeight} />
         <ContactSection />
-        <Footer screenHeight={screenHeight} />
+        <Footer screenHeight={screenHeight} isSmallScreen={isSmallScreen} />
       </>
     );
   }

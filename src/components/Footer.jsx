@@ -1,7 +1,9 @@
 import FadeInItem from "./FadeInItem";
 import PropTypes from "prop-types";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
-function Footer({ screenHeight }) {
+function Footer({ screenHeight, isSmallScreen }) {
   return (
     <footer
       className={`bg-accent p-[9%] flex items-center justify-center ${
@@ -18,9 +20,38 @@ function Footer({ screenHeight }) {
             <div>
               <div className="sm:hidden text-[#CBC9E2]">NAVIGATION</div>
               <ul className="text-secondary flex flex-col gap-8 mt-5 sm:mt-0">
-                <li>My Work</li>
-                <li>About Me</li>
-                <li>Contact</li>
+                <RouterLink to={"/projects"}>My Work</RouterLink>
+                {isSmallScreen ? (
+                  <>
+                    <ScrollLink
+                      to="aboutSmallScreen"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      className="cursor-pointer"
+                    >
+                      About Me
+                    </ScrollLink>
+                    <ScrollLink
+                      to="contactSmallScreen"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      className="cursor-pointer"
+                    >
+                      Contact
+                    </ScrollLink>
+                  </>
+                ) : (
+                  <>
+                    <a href="#ABOUT" className="cursor-pointer">
+                      About Me
+                    </a>
+                    <a href="#CONTACT" className="cursor-pointer">
+                      Contact
+                    </a>
+                  </>
+                )}
               </ul>
             </div>
 
@@ -43,9 +74,12 @@ function Footer({ screenHeight }) {
             <div>
               <div className="text-[#CBC9E2]">SAY HELLO</div>
               <div className="flex flex-col gap-5 mt-5">
-                <div className="text-secondary">
+                <a
+                  href="mailto:stefanbrkic.inbox@gmail.com"
+                  className="text-secondary cursor-pointer"
+                >
                   stefanbrkic.inbox@gmail.com
-                </div>
+                </a>
                 <div className="text-secondary">t.me/stefanbrkic</div>
               </div>
             </div>
@@ -72,6 +106,7 @@ function Footer({ screenHeight }) {
 
 Footer.propTypes = {
   screenHeight: PropTypes.number,
+  isSmallScreen: PropTypes.bool,
 };
 
 export default Footer;
