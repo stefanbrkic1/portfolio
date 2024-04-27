@@ -37,7 +37,7 @@ function HeroSection() {
         </FadeInItem>
 
         <div className="relative sm:absolute w-[80%] h-[45%] sm:w-[26rem] sm:h-[26rem] top-[20%] sm:top-[22%] bg-background sm:right-[5em] min-[1850px]:right-[6em] min-[2030px]:right-[7em] min-[2250px]:right-[8em] min-[2450px]:right-[9em] min-[2650px]:right-[10em] min-[2850px]:right-[11em] min-[3000px]:right-[13em] flex justify-center items-center">
-          <div className="w-[100%] h-[100%] bg-[url('../assets/img/stefan-min.png')] bg-contain bg-center bg-no-repeat bg-background z-20"></div>
+          <div className="w-[100%] h-[100%] bg-[url('../assets/img/stefan-small.png')] bg-contain bg-center bg-no-repeat bg-background z-20"></div>
           <div className="hidden sm:block sm:absolute border-[2px] border-white  w-full h-full top-[30px] right-[-30px] z-10"></div>
           <svg
             viewBox="0 0 134 123"
