@@ -9,7 +9,9 @@ function Navbar() {
     // Function to handle overflow property based on screen size
     const handleOverflow = () => {
       if (window.innerWidth <= 640) {
-        document.body.style.overflow = isOpen ? "hidden" : "auto";
+        isOpen
+          ? document.documentElement.classList.add("overflow-hidden")
+          : document.documentElement.classList.remove("overflow-hidden");
       }
     };
 
