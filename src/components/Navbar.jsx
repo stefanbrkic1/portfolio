@@ -46,7 +46,7 @@ function Navbar({ isSmallScreen }) {
         <nav className="px-[3%] flex justify-between items-center py-5">
           <div>
             <div className="font-black text-secondary text-[25px] pointer-events-auto">
-              {"</>developer"}
+              {"</>stefanbrkic"}
             </div>
           </div>
           <div className="hidden sm:block z-50 pointer-events-auto">
@@ -62,7 +62,7 @@ function Navbar({ isSmallScreen }) {
         </nav>
       </div>
       {isOpen && (
-        <div className="text-[#ffffff] absolute px-[10%] z-40 top-0 w-screen h-screen sm:top-3 sm:right-7 sm:w-[26rem] xl:w-[22rem] sm:h-auto bg-primary flex flex-col gap-3 pt-[25%] sm:pt-[6rem] xl:pt-[4.5rem] sm:p-7 text-[1.3rem] sm:text-[1.5rem] xl:text-[1.2rem]">
+        <div className="text-[#ffffff] absolute px-[10%] z-40 top-0 w-screen h-screen sm:top-3 sm:right-7 sm:w-[26rem] xl:w-[22rem] sm:h-auto bg-primary flex flex-col gap-5 sm:gap-3 pt-[25%] sm:pt-[6rem] xl:pt-[4.5rem] sm:p-7 text-[1.3rem] sm:text-[1.5rem] xl:text-[1.2rem]">
           <FadeInItem index={1} showOnce={true}>
             <RouterLink
               to={"/projects"}
@@ -118,7 +118,7 @@ function Navbar({ isSmallScreen }) {
             )}
           </FadeInItem>
 
-          <div className="pt-5 font-bold">LINKS</div>
+          <div className="pt-7 sm:pt-5 font-bold">LINKS</div>
           <FadeInItem index={4} showOnce={true}>
             <a
               href="/StefanBrkic-CV.pdf"
@@ -129,7 +129,7 @@ function Navbar({ isSmallScreen }) {
             </a>
           </FadeInItem>
 
-          <div className="pt-5 font-bold">SAY HELLO</div>
+          <div className="pt-7 sm:pt-5 font-bold">SAY HELLO</div>
           <FadeInItem index={5} showOnce={true}>
             <a
               href="mailto:stefanbrkic.inbox@gmail.com"
