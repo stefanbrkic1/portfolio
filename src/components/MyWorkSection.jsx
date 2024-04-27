@@ -10,7 +10,7 @@ function MyWorkSection({ screenHeight }) {
       }`}
     >
       <div className="flex flex-col sm:flex-row w-full sm:h-[40rem] shadow-sm">
-        <div className="flex-1 bg-[#ffffff] border-b-2 sm:border-b-0 sm:border-r-2 border-primary border-opacity-40 p-[24px] sm:p-[5rem]">
+        <div className="flex-1 bg-[#ffffff] border-b-2 sm:border-b-0 sm:border-r-2 border-primary border-opacity-40 px-[2rem] py-[3rem] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>
             <h2 className="text-[2.5rem] sm:text-[3.5em] leading-[3rem] sm:leading-[4rem] font-black text-primary max-w-[25rem]">
               Checkout my projects
@@ -36,7 +36,7 @@ function MyWorkSection({ screenHeight }) {
             </svg>
           </Link>
         </div>
-        <div className="flex-1 bg-[#ffffff] p-[24px] sm:p-[5rem]">
+        <div className="flex-1 bg-[#ffffff] px-[2rem] py-[3rem] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>
             <h2 className="text-[2.5rem] sm:text-[3.5em] leading-[3rem] sm:leading-[4rem] font-black text-primary max-w-[25rem]">
               Checkout my resume
