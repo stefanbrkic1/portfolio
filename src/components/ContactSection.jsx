@@ -2,7 +2,10 @@ import FadeInItem from "./FadeInItem";
 
 function ContactSection() {
   return (
-    <div className="h-auto py-[3rem] sm:py-[8rem] lg:py-[5rem] px-[9%] flex justify-center items-center">
+    <div
+      id="contactSmallScreen"
+      className="h-auto py-[3rem] sm:py-[8rem] lg:py-[5rem] px-[9%] flex justify-center items-center"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col sm:justify-center sm:items-center">
           <FadeInItem index={1} showOnce={true}>

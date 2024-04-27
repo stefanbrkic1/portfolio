@@ -27,10 +27,12 @@ function LandingPage() {
     };
   }, []);
 
+  const anchors = ["HERO", "SKILLS", "ABOUT", "MYWORK", "CONTACT", "FOOTER"];
+
   if (isSmallScreen || screenHeight < 690) {
     return (
       <>
-        <Navbar />
+        <Navbar isSmallScreen={isSmallScreen} />
         <HeroSection />
         <SkillsSection screenHeight={screenHeight} />
         <AboutSection screenHeight={screenHeight} />
@@ -43,6 +45,7 @@ function LandingPage() {
   return (
     <>
       <ReactFullpage
+        anchors={anchors}
         navigation
         onLeave={(origin, destination, direction) => {
           console.log("onLeave event", { origin, destination, direction });
