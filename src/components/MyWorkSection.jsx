@@ -43,9 +43,13 @@ function MyWorkSection({ screenHeight }) {
               Details about me like my experience, tech stack etc...
             </p>
           </FadeInItem>
-          <button className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem]">
+          <a
+            href="/StefanBrkic-CV.pdf"
+            className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem]"
+            download
+          >
             DOWNLOAD
-          </button>
+          </a>
         </div>
       </div>
     </div>
