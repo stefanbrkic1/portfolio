@@ -58,7 +58,9 @@ function Footer({ screenHeight, isSmallScreen }) {
             <div>
               <div className="sm:hidden text-[#CBC9E2]">LINKS</div>
               <div className="text-secondary flex flex-col gap-8 mt-5 sm:mt-0">
-                <div>My Resume</div>
+                <a href="/StefanBrkic-CV.pdf" download>
+                  My Resume
+                </a>
                 <a href="https://github.com/stefanbrkic1" target="blank">
                   GitHub
                 </a>
