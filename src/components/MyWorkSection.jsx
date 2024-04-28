@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function MyWorkSection({ screenHeight }) {
   return (
     <div
-      className={`h-auto px-[3%] sm:px-[5%] md:px-[9%] py-[6rem] md:py-[5rem] flex items-center justify-center ${
+      className={`h-auto px-[3%] sm:px-[5%] md:px-[9%] py-[3rem] md:py-[5rem] flex items-center justify-center ${
         screenHeight < 690 ? "lg:py-[6rem]" : "lg:py-0"
       }`}
     >
