@@ -5,7 +5,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
 
-function Navbar({ isSmallScreen }) {
+function Navbar({ isSmallScreen, screenHeight }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ function Navbar({ isSmallScreen }) {
           </FadeInItem>
 
           <FadeInItem index={2} showOnce={true}>
-            {isSmallScreen ? (
+            {isSmallScreen || screenHeight < 690 ? (
               <ScrollLink
                 to="aboutSmallScreen"
                 spy={true}
@@ -96,7 +96,7 @@ function Navbar({ isSmallScreen }) {
           </FadeInItem>
 
           <FadeInItem index={3} showOnce={true}>
-            {isSmallScreen ? (
+            {isSmallScreen || screenHeight < 690 ? (
               <ScrollLink
                 to="contactSmallScreen"
                 spy={true}
@@ -166,6 +166,7 @@ function Navbar({ isSmallScreen }) {
 
 Navbar.propTypes = {
   isSmallScreen: PropTypes.bool,
+  screenHeight: PropTypes.number,
 };
 
 export default Navbar;

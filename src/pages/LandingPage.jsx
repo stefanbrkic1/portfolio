@@ -32,7 +32,7 @@ function LandingPage() {
   if (isSmallScreen || screenHeight < 690) {
     return (
       <>
-        <Navbar isSmallScreen={isSmallScreen} />
+        <Navbar isSmallScreen={isSmallScreen} screenHeight={screenHeight} />
         <HeroSection />
         <SkillsSection screenHeight={screenHeight} />
         <AboutSection screenHeight={screenHeight} />
