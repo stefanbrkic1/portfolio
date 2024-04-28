@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ProjectsPage() {
   return (
     <>
-      <div className="relative bg-primary pt-[5rem] pb-[4rem] sm:pb-[6.5rem] flex justify-center items-center flex-col">
+      <div className="relative bg-primary pt-[4rem] pb-[4rem] sm:pt-[5rem] sm:pb-[6.5rem] flex justify-center items-center flex-col">
         <FadeInItem index={2} showOnce={true}>
           <h1 className="max-[400px]:text-[32px] min-[400px]:text-[36px] text-[34px] sm:text-[4.7em] md:text-[4em] font-extrabold text-secondary">
             My Work
@@ -19,7 +19,7 @@ function ProjectsPage() {
 
         <Link
           to={"/"}
-          className="absolute top-8 left-8 flex items-center gap-3 text-secondary font-bold text-[1.2rem]"
+          className="absolute top-5 left-5 sm:top-8 sm:left-8 flex items-center gap-3 text-secondary font-bold text-[1.2rem]"
         >
           <svg
             viewBox="0 0 38 66"
