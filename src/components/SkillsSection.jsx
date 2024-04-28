@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 function SkillsSection({ screenHeight }) {
   return (
     <div
-      className={`overflow-hidden w-full h-auto py-[17%] sm:max-h-[52rem] flex flex-col gap-5 sm:gap-0 justify-center px-[9%] ${
-        screenHeight < 690 ? "sm:py-[17%]" : "lg:py-0"
+      className={`overflow-hidden w-full h-auto py-[18%] sm:py-[30%] md:py-[25%] sm:max-h-[52rem] flex flex-col gap-9 sm:gap-0 justify-center px-[5%] md:px-[9%] ${
+        screenHeight < 690 ? "!sm:py-[17%]" : "lg:py-0"
       }`}
     >
       <div className="flex">
@@ -16,7 +16,7 @@ function SkillsSection({ screenHeight }) {
             </h1>
           </FadeInItem>
           <FadeInItem index={2} showOnce={true}>
-            <p className="text-accent sm:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
+            <p className="text-accent sm:max-w-[42rem] md:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.7rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
               As a frontend developer, I&apos;m skilled in both coding and
               design. I create interfaces that are both visually appealing and
               easy to use. I pay attention to the details to make sure every
@@ -425,7 +425,7 @@ function SkillsSection({ screenHeight }) {
             </h1>
           </FadeInItem>
           <FadeInItem index={4} showOnce={true}>
-            <p className="text-accent sm:max-w-[43rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.6rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
+            <p className="text-accent sm:max-w-[43rem] md:max-w-[41rem] lg:max-w-[40rem] xl:max-w-[33rem] text-[1rem] sm:text-[1.7rem] md:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.1rem]">
               I love solving problems through engineering. I&apos;m all about
               finding smart solutions and writing efficient code. With attention
               to detail and a focus on making things work smoothly, I ensure

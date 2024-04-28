@@ -4,17 +4,17 @@ function ContactSection() {
   return (
     <div
       id="contactSmallScreen"
-      className="h-auto py-[3rem] sm:py-[8rem] lg:py-[5rem] px-[9%] flex justify-center items-center"
+      className="h-auto pt-[2rem] pb-[5rem] sm:pt-[8rem] sm:pb-[8rem] lg:pt-[5rem] lg:pb-[5rem] px-[9%] flex justify-center items-center"
     >
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col sm:justify-center sm:items-center">
           <FadeInItem index={1} showOnce={true}>
-            <h2 className="text-[2.3rem] sm:text-[3.5em] font-black text-primary leading-[2.7rem]">
+            <h2 className="text-[2.3rem] sm:text-[3.7em] md:text-[3.5em] font-black text-primary leading-[2.7rem]">
               Send me a message!
             </h2>
           </FadeInItem>
           <FadeInItem index={2} showOnce={true}>
-            <p className="pt-5 text-accent text-[1.2rem] sm:text-[1.5rem] max-w-[28rem] sm:text-center">
+            <p className="pt-5 text-accent text-[1.2rem] sm:text-[1.7rem] md:text-[1.5rem] max-w-[28rem] sm:max-w-[37rem] md:max-w-[32rem] sm:text-center">
               Got a question or proposal, or just want to say hello? Go ahead.
             </p>
           </FadeInItem>
@@ -53,7 +53,7 @@ function ContactSection() {
           ></textarea>
           <button
             type="submit"
-            className="btn-animation group hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[5rem] py-[1.1rem] text-primary font-bold text-[1.1rem] "
+            className="btn-animation group hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[5rem] py-[1.1rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
           >
             <div>SEND</div>
             <svg

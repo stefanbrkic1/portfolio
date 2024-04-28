@@ -3,7 +3,7 @@ import FadeInItem from "./FadeInItem";
 function HeroSection() {
   return (
     <>
-      <div className="relative flex flex-col items-center sm:block sm:pb-[3.6em] h-[880px] sm:h-auto sm:max-h-[100vh] pl-[3%] pr-[3%] sm:pl-[9%] sm:pr-[0px] background-0deg sm:background-90deg pt-[24%] sm:pt-[16rem] max-[360px]:text-[33px] min-[400px]:text-[36px] text-[34px] sm:text-[4em] font-black text-[white]">
+      <div className="relative flex flex-col items-center sm:block sm:pb-[3.6em] h-[880px] sm:h-auto pl-[5%] pr-[5%] md:pl-[9%] sm:pr-[0px] background-0deg sm:background-90deg pt-[24%] sm:pt-[16rem] max-[400px]:text-[32px] min-[400px]:text-[36px] text-[34px] sm:text-[4.7em] md:text-[4em] font-black text-[white]">
         <FadeInItem index={1} showOnce={true}>
           <h1 className="text-secondary leading-10">Hi I&apos;m Stefan</h1>
         </FadeInItem>
@@ -11,32 +11,32 @@ function HeroSection() {
           <h1>Frontend Developer.</h1>
         </FadeInItem>
         <FadeInItem index={3} showOnce={true}>
-          <p className="text-center sm:text-start text-[1rem] sm:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium sm:max-w-[30rem] xl:max-w-[25rem] mt-1">
+          <p className="text-center sm:text-start text-[1rem] sm:text-[2rem] md:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium sm:max-w-[40rem] md:max-w-[30rem] xl:max-w-[25rem] mt-1">
             Bringing creativity and functionality to the web, one line of code
             at a time.
           </p>
         </FadeInItem>
         <FadeInItem index={4} showOnce={true}>
-          <div className="flex items-center gap-5 mt-8">
+          <div className="flex items-center gap-5 sm:gap-8 md:gap-6 lg:gap-5 mt-8">
             <a
               href="https://www.linkedin.com/in/stefan-brkic-4014012a3/"
               target="blank"
-              className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/linkedin.svg')] bg-contain bg-center bg-no-repeat w-[2rem] h-[2rem]"
+              className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/linkedin.svg')] bg-contain bg-center bg-no-repeat w-[2.3rem] h-[2.3rem] sm:w-[3.8rem] sm:h-[3.8rem] md:w-[3rem] md:h-[3rem] lg:w-[2.7rem] lg:h-[2.7rem] xl:w-[2.2rem] xl:h-[2.2rem]"
             ></a>
             <a
               href="https://github.com/stefanbrkic1"
               target="blank"
-              className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/github.svg')] bg-contain bg-center bg-no-repeat w-[2rem] h-[2rem]"
+              className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/github.svg')] bg-contain bg-center bg-no-repeat w-[2.3rem] h-[2.3rem] sm:w-[3.8rem] sm:h-[3.8rem] md:w-[3rem] md:h-[3rem] lg:w-[2.7rem] lg:h-[2.7rem] xl:w-[2.2rem] xl:h-[2.2rem]"
             ></a>
             <a
               href="https://twitter.com/stefanbrkic_"
               target="blank"
-              className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/twitter.svg')] bg-contain bg-center bg-no-repeat w-[2rem] h-[2rem]"
+              className="hover:scale-[1.1] transition-all cursor-pointer bg-[url('../assets/icons/twitter.svg')] bg-contain bg-center bg-no-repeat w-[2.3rem] h-[2.3rem] sm:w-[3.8rem] sm:h-[3.8rem] md:w-[3rem] md:h-[3rem] lg:w-[2.7rem] lg:h-[2.7rem] xl:w-[2.2rem] xl:h-[2.2rem]"
             ></a>
           </div>
         </FadeInItem>
 
-        <div className="relative sm:absolute w-[80%] h-[45%] sm:w-[26rem] sm:h-[26rem] top-[20%] sm:top-[22%] bg-background sm:right-[5em] min-[1850px]:right-[6em] min-[2030px]:right-[7em] min-[2250px]:right-[8em] min-[2450px]:right-[9em] min-[2650px]:right-[10em] min-[2850px]:right-[11em] min-[3000px]:right-[13em] flex justify-center items-center">
+        <div className="relative sm:absolute w-[80%] h-[45%] sm:w-[26rem] sm:h-[26rem] top-[20%] sm:top-[22%] bg-background sm:right-[3.6em] md:right-[5em] min-[1850px]:right-[6em] min-[2030px]:right-[7em] min-[2250px]:right-[8em] min-[2450px]:right-[9em] min-[2650px]:right-[10em] min-[2850px]:right-[11em] min-[3000px]:right-[13em] flex justify-center items-center">
           <div className="w-[100%] h-[100%] bg-[url('../assets/img/stefan-small.png')] bg-contain bg-center bg-no-repeat bg-background z-20"></div>
           <div className="hidden sm:block sm:absolute border-[2px] border-white  w-full h-full top-[30px] right-[-30px] z-10"></div>
           <svg

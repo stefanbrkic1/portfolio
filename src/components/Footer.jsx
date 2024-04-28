@@ -6,14 +6,14 @@ import { Link as ScrollLink } from "react-scroll";
 function Footer({ screenHeight, isSmallScreen }) {
   return (
     <footer
-      className={`bg-accent p-[9%] flex items-center justify-center ${
+      className={`bg-accent px-[9%] py-[15%] sm:py-[9%] flex items-center justify-center ${
         screenHeight < 690 ? "h-auto" : "lg:h-screen"
       }`}
     >
       <div className="w-full">
         <FadeInItem index={1} showOnce={true}>
-          <div className="text-[2rem] sm:text-[3rem] font-black text-secondary">
-            LOGO
+          <div className="text-[1.6rem] sm:text-[2rem] font-black text-secondary">
+            {"</>stefanbrkic"}
           </div>
 
           <div className="flex flex-col sm:flex-row py-8 sm:p-[4rem] md:p-[5rem] md:py-[5rem] text-[1.1rem] sm:text-[2rem] md:text-[1.8rem] lg:text-[1.4rem] gap-[4rem] sm:gap-[12rem]">

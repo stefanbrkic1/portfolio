@@ -5,7 +5,7 @@ function AboutSection({ screenHeight }) {
   return (
     <div
       id="aboutSmallScreen"
-      className={`h-auto bg-primary flex flex-col min-[1025px]:flex-row items-stretch px-[9%] ${
+      className={`h-auto bg-primary flex flex-col min-[1025px]:flex-row items-stretch px-[5%] md:px-[9%] ${
         screenHeight < 690 ? "lg:h-auto min-h-[600px]" : "lg:h-screen"
       }`}
     >

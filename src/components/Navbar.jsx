@@ -45,7 +45,7 @@ function Navbar({ isSmallScreen }) {
       <div className="absolute top-0 w-full z-50 sm:pointer-events-none">
         <nav className="px-[3%] flex justify-between items-center py-5">
           <div>
-            <div className="font-black text-secondary text-[25px] pointer-events-auto">
+            <div className="font-black text-secondary text-[1.3rem] sm:text-[2.5rem] md:text-[2rem] lg:text-[1.8rem] xl:text-[1.6rem] pointer-events-auto">
               {"</>stefanbrkic"}
             </div>
           </div>

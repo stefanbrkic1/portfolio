@@ -5,25 +5,25 @@ import { Link } from "react-router-dom";
 function MyWorkSection({ screenHeight }) {
   return (
     <div
-      className={`h-auto px-[3%] sm:px-[9%] py-[3rem] md:py-[5rem] flex items-center justify-center ${
-        screenHeight < 690 ? "lg:py-[5rem]" : "lg:py-0"
+      className={`h-auto px-[3%] sm:px-[5%] md:px-[9%] py-[6rem] md:py-[5rem] flex items-center justify-center ${
+        screenHeight < 690 ? "lg:py-[6rem]" : "lg:py-0"
       }`}
     >
       <div className="flex flex-col sm:flex-row w-full sm:h-[40rem] shadow-sm">
-        <div className="flex-1 bg-[#ffffff] border-b-2 sm:border-b-0 sm:border-r-2 border-primary border-opacity-40 px-[2rem] py-[3rem] sm:p-[5rem]">
+        <div className="flex-1 bg-[#ffffff] border-b-2 sm:border-b-0 sm:border-r-2 border-primary border-opacity-40 px-[2rem] py-[4.1rem] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>
-            <h2 className="text-[2.5rem] sm:text-[3.5em] leading-[3rem] sm:leading-[4rem] font-black text-primary max-w-[25rem]">
+            <h2 className="text-[2.5rem] sm:text-[3.7em] md:text-[3.5em] leading-[3rem] sm:leading-[4rem] font-black text-primary max-w-[25rem]">
               Checkout my projects
             </h2>
           </FadeInItem>
           <FadeInItem index={2} showOnce={true}>
-            <p className="text-accent text-[1.2rem] sm:text-[1.5rem] mt-4 max-w-[23rem]">
+            <p className="text-accent text-[1.2rem] sm:text-[1.7rem] md:text-[1.5rem] mt-4 max-w-[23rem]">
               Open source projects, web apps and experimentals.
             </p>
           </FadeInItem>
           <Link
             to={"/projects"}
-            className="btn-animation group hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem]"
+            className="btn-animation group hover:text-[#ffffff] flex justify-center items-center gap-5 w-full md:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
           >
             <div>SEE MY WORK</div>
             <svg
@@ -36,20 +36,20 @@ function MyWorkSection({ screenHeight }) {
             </svg>
           </Link>
         </div>
-        <div className="flex-1 bg-[#ffffff] px-[2rem] py-[3rem] sm:p-[5rem]">
+        <div className="flex-1 bg-[#ffffff] px-[2rem] py-[4.1rem] sm:p-[5rem]">
           <FadeInItem index={0} showOnce={true}>
-            <h2 className="text-[2.5rem] sm:text-[3.5em] leading-[3rem] sm:leading-[4rem] font-black text-primary max-w-[25rem]">
+            <h2 className="text-[2.5rem] sm:text-[3.7em] md:text-[3.5em] leading-[3rem] sm:leading-[4rem] font-black text-primary max-w-[25rem]">
               Checkout my resume
             </h2>
           </FadeInItem>
           <FadeInItem index={2} showOnce={true}>
-            <p className="text-accent text-[1.2rem] sm:text-[1.5rem] mt-4 max-w-[23rem]">
+            <p className="text-accent text-[1.2rem] sm:text-[1.7rem] md:text-[1.5rem] mt-4 max-w-[23rem]">
               Details about me like my experience, tech stack etc...
             </p>
           </FadeInItem>
           <a
             href="/StefanBrkic-CV.pdf"
-            className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem]"
+            className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full md:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
             download
           >
             DOWNLOAD
