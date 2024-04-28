@@ -37,7 +37,7 @@ function ProjectsPage() {
           viewBox="0 0 134 123"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="hidden sm:blockabsolute top-[-3rem] left-[20rem] w-[9rem] max-w-[150px]"
+          className="hidden sm:block absolute top-[-3rem] left-[20rem] w-[9rem] max-w-[150px]"
         >
           <circle cx="1" cy="1" r="1" fill="#CCF381" />
           <circle cx="12" cy="1" r="1" fill="#CCF381" />
