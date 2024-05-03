@@ -455,7 +455,7 @@ function ProjectsPage() {
         </svg>
       </div>
 
-      <section className="px-[9%] py-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2.5rem]">
+      <section className="px-[3%] py-[2rem] sm:px-[9%] sm:py-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2.5rem]">
         {projects &&
           projects.map((project) => {
             return (

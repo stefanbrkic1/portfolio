@@ -67,6 +67,10 @@ function Navbar({ isSmallScreen, screenHeight }) {
             <RouterLink
               to={"/projects"}
               className="cursor-pointer inline hover:font-bold"
+              onClick={() => {
+                closeMenu();
+                document.documentElement.classList.remove("overflow-hidden");
+              }}
             >
               My Work
             </RouterLink>
