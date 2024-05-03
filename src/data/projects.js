@@ -27,7 +27,8 @@ const projects = [
     id: 4,
     img: "/img/battleship.jpg",
     title: "Battleship",
-    description: "Classic naval combat game built using JavaScript",
+    description:
+      'Classic naval combat game "Battleship" built using JavaScript',
     github: "https://github.com/stefanbrkic1/battleship",
     deployment: "https://stefanbrkic1.github.io/battleship/",
   },
