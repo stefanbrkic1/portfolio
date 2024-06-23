@@ -1,6 +1,5 @@
 import FadeInItem from "../components/FadeInItem";
 import { Link } from "react-router-dom";
-import projects from "../data/projects";
 
 function ProjectsPage() {
   return (
@@ -13,8 +12,7 @@ function ProjectsPage() {
         </FadeInItem>
         <FadeInItem index={3} showOnce={true}>
           <p className="text-center text-[1rem] sm:text-[2rem] md:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium  mt-1 text-[#ffffff] max-w-[25rem] sm:max-w-[50rem] md:max-w-[40rem] xl:max-w-[28rem]">
-            I like to craft modern and scalable frontend products that users
-            will love.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi?
           </p>
         </FadeInItem>
 
@@ -454,46 +452,6 @@ function ProjectsPage() {
           />
         </svg>
       </div>
-
-      <section className="px-[3%] py-[2rem] sm:px-[9%] sm:py-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2.5rem]">
-        {projects &&
-          projects.map((project) => {
-            return (
-              <div
-                key={project.id}
-                className="flex flex-col shadow-md rounded-xl overflow-hidden"
-              >
-                <div
-                  className={`h-[14rem] bg-secondary bg-center bg-cover bg-no-repeat`}
-                  style={{ backgroundImage: `url(${project.img})` }}
-                ></div>
-                <div className="p-5 bg-[#ffffff]">
-                  <h3 className="text-[1.2rem] font-bold">{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="flex items-center gap-3 mt-5">
-                    <a
-                      href={project.deployment}
-                      target="_blank"
-                      className="bg-primary hover:bg-[#3B23C9] transition-all duration-200 text-[#ffffff] flex justify-center items-center gap-5 w-full border border-primary py-[0.7rem] font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
-                      download
-                    >
-                      VISIT WEBSITE
-                    </a>
-
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full border border-primary py-[0.7rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
-                      download
-                    >
-                      {"</> CODE"}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-      </section>
     </>
   );
 }
