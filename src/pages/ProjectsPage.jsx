@@ -1,7 +1,20 @@
 import FadeInItem from "../components/FadeInItem";
 import { Link } from "react-router-dom";
+import projects from "../data/projects";
+import Footer from "../components/Footer";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function ProjectsPage() {
+  let settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <div className="relative bg-primary pt-[4rem] pb-[4rem] sm:pt-[5rem] sm:pb-[6.5rem] flex justify-center items-center flex-col">
@@ -11,8 +24,8 @@ function ProjectsPage() {
           </h1>
         </FadeInItem>
         <FadeInItem index={3} showOnce={true}>
-          <p className="text-center text-[1rem] sm:text-[2rem] md:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium  mt-1 text-[#ffffff] max-w-[25rem] sm:max-w-[50rem] md:max-w-[40rem] xl:max-w-[28rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi?
+          <p className="text-center text-[1rem] sm:text-[2rem] md:text-[1.6rem] xl:text-[1.3rem] 2xl:text-[19px] font-medium  mt-1 text-[#ffffff] max-w-[20rem] sm:max-w-[40rem] md:max-w-[35rem] xl:max-w-[28rem]">
+            Showcasing my journey in building interactive web interfaces
           </p>
         </FadeInItem>
 
@@ -452,6 +465,51 @@ function ProjectsPage() {
           />
         </svg>
       </div>
+
+      <section className="bg-[#F4F4F4] px-[15%] py-[3rem]">
+        {projects &&
+          projects.map((project) => {
+            return (
+              <div
+                key={project.id}
+                className="bg-[#ffffff] pb-[40px] shadow-md rounded-md mb-10 overflow-hidden"
+              >
+                <Slider {...settings} className="cursor-pointer">
+                  <div>
+                    <img src={project.img[0]} alt="" />
+                  </div>
+                  <div>
+                    <img src={project.img[1]} alt="" />
+                  </div>
+                </Slider>
+
+                <div className="p-[3rem]">
+                  <h2 className="font-extrabold text-primary text-[2rem]">
+                    {project.title.toUpperCase()}
+                  </h2>
+                  <p>{project.description}</p>
+                  <div className="flex mt-[2rem] gap-4">
+                    <a
+                      href={project.deployment}
+                      target="_blank"
+                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-[210px] border border-primary py-[0.8rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
+                    >
+                      VISIT WEBSITE
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-[210px] border border-primary py-[0.8rem] text-primary font-bold text-[1.1rem] sm:text-[1.8rem] md:text-[1.1rem]"
+                    >
+                      GITHUB
+                    </a>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+      </section>
+      <Footer />
     </>
   );
 }
