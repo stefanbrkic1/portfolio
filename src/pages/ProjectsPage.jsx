@@ -16,7 +16,7 @@ function ProjectsPage() {
   };
 
   return (
-    <>
+    <div className="bg-[#F4F4F4]">
       <div className="relative bg-primary pt-[4rem] pb-[4rem] sm:pt-[5rem] sm:pb-[6.5rem] flex justify-center items-center flex-col">
         <FadeInItem index={2} showOnce={true}>
           <h1 className="max-[400px]:text-[32px] min-[400px]:text-[36px] text-[34px] sm:text-[4.7em] md:text-[4em] font-extrabold text-secondary">
@@ -466,15 +466,18 @@ function ProjectsPage() {
         </svg>
       </div>
 
-      <section className="bg-[#F4F4F4] px-[15%] py-[3rem]">
+      <section className="px-[20px] lg:px-[3%] py-[2rem] sm:py-[3rem] container min-[1900px]:px-[15%]">
         {projects &&
           projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="bg-[#ffffff] pb-[40px] shadow-md rounded-md mb-10 overflow-hidden"
+                className="bg-[#ffffff] pb-[10px] sm:pb-[40px] shadow-md rounded-md mb-10 overflow-hidden flex flex-col lg:flex-row"
               >
-                <Slider {...settings} className="cursor-pointer">
+                <Slider
+                  {...settings}
+                  className="cursor-pointer  w-full lg:w-[50%] xl:w-[58%]"
+                >
                   <div>
                     <img src={project.img[0]} alt="" />
                   </div>
@@ -483,23 +486,25 @@ function ProjectsPage() {
                   </div>
                 </Slider>
 
-                <div className="p-[3rem]">
-                  <h2 className="font-extrabold text-primary text-[2rem]">
+                <div className="p-[20px] sm:p-[3rem]">
+                  <h2 className="font-extrabold text-primary text-[2rem] sm:text-[4.5rem] md:text-[3.5rem] lg:text-[3rem] 2xl:text-[2.5rem]">
                     {project.title.toUpperCase()}
                   </h2>
-                  <p>{project.description}</p>
-                  <div className="flex mt-[2rem] gap-4">
+                  <p className="text-[0.9rem] sm:text-[15px] 2xl:text-[16px]">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-col sm:flex-row mt-[2rem] gap-4">
                     <a
                       href={project.deployment}
                       target="_blank"
-                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-[210px] border border-primary py-[0.8rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
+                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[210px] border border-primary py-[0.8rem] sm:py-[1.8rem] md:py-[1.2rem] lg:py-[1rem] xl:py-[0.8rem] text-primary font-bold text-[1.1rem] sm:text-[2.5rem] md:text-[2rem] lg:text-[1.3rem] xl:text-[1.1rem]"
                     >
                       VISIT WEBSITE
                     </a>
                     <a
                       href={project.github}
                       target="_blank"
-                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-[210px] border border-primary py-[0.8rem] text-primary font-bold text-[1.1rem] sm:text-[1.8rem] md:text-[1.1rem]"
+                      className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full sm:w-[210px] border border-primary py-[0.8rem] sm:py-[1.8rem] md:py-[1.2rem] lg:py-[1rem] xl:py-[0.8rem] text-primary font-bold text-[1.1rem] sm:text-[2.5rem] md:text-[2rem] lg:text-[1.3rem] xl:text-[1.1rem]"
                     >
                       GITHUB
                     </a>
@@ -510,7 +515,7 @@ function ProjectsPage() {
           })}
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -12,6 +12,15 @@ const projects = [
   },
   {
     id: uuidv4(),
+    img: ["/img/dinosaurs.jpg", "/img/dinosaurs-phones.jpg"],
+    title: "DINOZZ",
+    description:
+      "DINOZz is a web application that helps dinosaur enthusiasts explore and learn about various types of dinosaurs quickly and easily. The data, sourced from the National History Museum in London, includes details about each dinosaur’s characteristics, diet and geographical origin. Users can search and filter the dinosaurs, save their favorites, dive into interactive charts for insights, check the locations map where they have been found and stay updated with the latest news in this field.",
+    github: "https://github.com/chingu-voyages/v48-tier2-team-13",
+    deployment: "https://dinozz-discovery.onrender.com/",
+  },
+  {
+    id: uuidv4(),
     img: ["/img/e-commerce.jpg", "/img/e-commerce-phones.jpg"],
     title: "Shoping Commerce",
     description:
@@ -28,15 +37,7 @@ const projects = [
     github: "https://github.com/stefanbrkic1/MemoryGame",
     deployment: "https://rickandmorty-memory-teal.vercel.app/",
   },
-  {
-    id: uuidv4(),
-    img: ["/img/dinosaurs.jpg", "/img/dinosaurs-phones.jpg"],
-    title: "DINOZZ",
-    description:
-      "DINOZz is a web application that helps dinosaur enthusiasts explore and learn about various types of dinosaurs quickly and easily. The data, sourced from the National History Museum in London, includes details about each dinosaur’s characteristics, diet and geographical origin. Users can search and filter the dinosaurs, save their favorites, dive into interactive charts for insights, check the locations map where they have been found and stay updated with the latest news in this field.",
-    github: "https://github.com/chingu-voyages/v48-tier2-team-13",
-    deployment: "https://dinozz-discovery.onrender.com/",
-  },
+
   {
     id: uuidv4(),
     img: ["/img/listify.jpg", "/img/listify-phones.jpg"],
