@@ -49,10 +49,10 @@ function MyWorkSection({ screenHeight }) {
           </FadeInItem>
           <a
             href="/StefanBrkic-CV.pdf"
+            target="_blank"
             className="hover:bg-primary transition-all duration-200 hover:text-[#ffffff] flex justify-center items-center gap-5 w-full md:w-[26rem] border border-primary mt-[3rem] sm:mt-[7rem] py-[1.1rem] text-primary font-bold text-[1.1rem] sm:text-[1.5rem] md:text-[1.1rem]"
-            download
           >
-            DOWNLOAD
+            RESUME (PDF)
           </a>
         </div>
       </div>
